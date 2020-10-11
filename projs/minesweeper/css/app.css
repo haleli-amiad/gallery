@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(248, 173, 164);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier Prime', monospace;
+    color: white;
+}
+
+h1 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    letter-spacing: 10px;
+    font-size: 3.1em;
+    color: white;
+    text-shadow: -1px -1px 0 rgb(94, 94, 94), 0.5px -1px 0 rgb(124, 124, 124), -1px 1px 0 rgb(97, 97, 97), 1px 1px 0 rgb(97, 97, 97);
+}
+
+.emoji img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.emoji:hover {
+    cursor: pointer;
+}
+
+.restart {
+    display: inline-flex;
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 20px 20px 20px 20px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: white;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.restart:hover {
+    background-color: rgb(238, 226, 226);
+}
+
+.flag {
+    padding-top: 5px;
+    padding-right: 1px;
+    width: 22px;
+    /* max-height: 25px; */
+    height: auto;
+}
+
+.board td {
+    color: black;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.shown {
+    background-color: rgb(250, 237, 237);
+}
+
+table {
+    /* float: center; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 0.3px solid black;
+}
+
+td {
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: white;
+}
+
+td:hover {
+    background-color: rgb(250, 237, 237);
+}
+
+.timer {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.levels {
+    margin-top: 15px;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.easy {
+    padding: 20px;
+}
+
+.medium {
+    padding: 20px;
+}
+
+.hard {
+    padding: 20px;
+}
+
+.easy:hover {
+    cursor: pointer;
+}
+
+.medium:hover {
+    cursor: pointer;
+}
+
+.hard:hover {
+    cursor: pointer;
+}
+
+.heart {
+    margin-top: 10px;
+    padding: 0px;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.btn {
+    position: relative;
+    color: white;
+    width: 256px;
+    height: 44px;
+    line-height: 64px;
+    transition: all 0.3s;
+}
+
+.btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 40%;
+}
+
+.btn-one::before {
+    justify-content: center;
+    left: 4px;
+    z-index: 1;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+    opacity: 10;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    transition: all 0.9s;
+}
+
+.btn-one:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+/* .hints {} */
+
+.hint {
+    position: absolute;
+    top: 250px;
+    left: 620px;
+}
+
+.hint img {
+    /* float: left; */
+    margin-right: 0px;
+    max-width: 60px;
+    max-height: 45px;
+}

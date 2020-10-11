@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(247, 240, 243);
+    color: rgb(80, 102, 85);
+    text-align: center;
+    font-family: 'VT323', monospace;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color: rgb(80, 102, 85);
+}
+
+button {
+    margin-bottom: 10px;
+    background-color: pink;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center
+}
+
+.cell img {
+    width: 25px;
+    height: auto
+}
+
+.floor {
+    background-color: rgb(189, 165, 165)
+}
+
+.wall {
+    background-color: rgb(80, 102, 85)
+}
+
+.victory {
+    font-size: 6em;
+    color: rgb(80, 102, 85);
+    display: none;
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body onkeyup="handleKey(event)" onload="init()">
+  <h1>Collect those Balls</h1>
+  <div><h2>You have collected <span class="ball-count"></span> balls</h2></div>
+  <button onclick="init()">RESTART</button>
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+  <h1 class="victory">VICTORY!!!</h1>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

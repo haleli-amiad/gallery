@@ -1,0 +1,77 @@
+body {
+    background-color: #2A89A3;
+}
+
+.balloon {
+    background-color: #32C6F0;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    position: absolute;
+}
+
+.balloon2 {
+    background-color: #F0E562;
+    margin-left: 150px;
+}
+
+.balloon3 {
+    background-color: #F04B7E;
+    margin-left: 300px;
+}
+
+.balloon4 {
+    background-color: #A3224B;
+    margin-left: 450px;
+}
+
+.balloon5 {
+    background-color: #18C6F0;
+    margin-left: 600px;
+}
+
+.balloon6 {
+    background-color: #F0E462;
+    margin-left: 750px;
+}
+
+.balloon7 {
+    background-color: #F04A85;
+    margin-left: 750px;
+}
+
+.balloon8 {
+    background-color: #A32250;
+    margin-left: 900px;
+}
+
+.balloon9 {
+    background-color: #32DDF0;
+    margin-left: 1050px;
+}
+
+.balloon10 {
+    background-color: #F0D518;
+    margin-left: 1200px;
+}
+
+.balloon11 {
+    background-color: #F00085;
+    margin-left: 1350px;
+}
+
+.balloon12 {
+    background-color: #A31061;
+    margin-left: 1500px;
+}
+
+.balloon13 {
+    background-color: #F04B7E;
+    margin-left: 1650px;
+}
+
+.fadeout {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}

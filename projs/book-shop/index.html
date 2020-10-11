@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop - Admin area</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="onInit()">
+    <div class="container-head container">
+        <h1>bookshop-CRUDL</h1>
+        <h2>books management - admin area</h2>
+    </div>
+    <div class="modal-update container hide">
+    </div>
+    <div class="container-books container">
+        <section class="add-book">
+            <h2>Add book</h2>
+            <input type="text" name="name" placeholder="Book Name" />
+            <input class="book-price" type="number" name="price" placeholder="Book Price" />
+            <button onclick="onAddBook()">Add</button>
+        </section>
+        <table>
+            <thead>
+                <th onclick="onSetSort('id')">ID</th>
+                <th onclick="onSetSort('name')">NAME</th>
+                <th onclick="onSetSort('price')">PRICE</th>
+                <th>ACTIONS</th>
+            </thead>
+            <tbody class="books-container">
+            </tbody>
+        </table>
+        <button onclick="onChangePage(-1)">Prev Page</button>
+        <button onclick="onChangePage(1)">Next Page</button>
+    </div>
+    <div class="modal container">
+        <h5 class="book-details name"></h5>
+        <h6 class="book-details price"></h6>
+        <span class="book-img"></span>
+        <p></p>
+        <div class="rate-book">
+        </div>
+    </div>
+    <footer>
+        coffeeRights(C)
+    </footer>
+
+    <script src=" js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/bookshop-service.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+</body>
+
+</html>

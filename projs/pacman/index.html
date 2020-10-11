@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAC-MIK</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet">
+</head>
+
+<body onload="init()" onkeyup="movePacman(event)">
+    <h1>PAC-MIK</h1>
+    <h2>Score: <span>0</span></h2>
+    <div class="board-container"></div>
+    <div class="game-over">
+        <h1>GAME OVER :(</h1>
+        <h2>Try again?</h2>
+        <button onclick="init()">Let's go!</button>
+    </div>
+    <div class="victory">
+        <h1>YOU WON, MOTHERFUCKER!</h1>
+        <h2>let's do it again</h2>
+        <button onclick="init()">YALLA!</button>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+
+</html>
